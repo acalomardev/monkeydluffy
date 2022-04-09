@@ -97,6 +97,27 @@ picture>img {
     text-decoration: underline !important;
 }
 
+.content {
+    width: 100%;
+}
+
+.hided>li {
+    text-indent: 1em;
+}
+
+.hided>li>p {
+    text-indent: 2em;
+}
+
+.hided>a {
+    color: #00f;
+    text-decoration: underline;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
 @media screen and (max-width: 425px) {
     body {
         max-width: 100%;
@@ -312,6 +333,9 @@ picture>img {
         grid-area: teammates;
         justify-self: center;
     }
+    .reverse>.content>h2 {
+        text-align: end;
+    }
 }
 
 @media screen and (min-width: 769px) {
@@ -431,6 +455,13 @@ picture>img {
         flex-direction: column;
         align-items: center;
     }
+    .reverse>.content>h2 {
+        text-align: end;
+    }
+}
+
+.hided>* {
+    display: inherit;
 }
 
 @media screen and (min-width:1025px) {

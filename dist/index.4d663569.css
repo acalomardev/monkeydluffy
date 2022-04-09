@@ -97,6 +97,27 @@ picture > img {
   text-decoration: underline !important;
 }
 
+.content {
+  width: 100%;
+}
+
+.hided > li {
+  text-indent: 1em;
+}
+
+.hided > li > p {
+  text-indent: 2em;
+}
+
+.hided > a {
+  color: #00f;
+  text-decoration: underline;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 425px) {
   body {
     max-width: 100%;
@@ -282,9 +303,6 @@ picture > img {
     max-width: 50%;
   }
 
-  .category {
-  }
-
   .sidebar {
     grid-area: sidebar;
   }
@@ -366,6 +384,10 @@ picture > img {
   .teammates {
     grid-area: teammates;
     justify-self: center;
+  }
+
+  .reverse > .content > h2 {
+    text-align: end;
   }
 }
 
@@ -512,6 +534,14 @@ picture > img {
     align-items: center;
     display: flex;
   }
+
+  .reverse > .content > h2 {
+    text-align: end;
+  }
+}
+
+.hided > * {
+  display: inherit;
 }
 
 @media screen and (min-width: 1025px) {
