@@ -65,7 +65,7 @@ picture > img {
 
 .card {
   transition: all .3s;
-  box-shadow: 0 4px 8px #0003;
+  box-shadow: 0 10px 14px #0003;
 }
 
 .categories-title {
@@ -116,6 +116,14 @@ picture > img {
 
 a:hover {
   cursor: pointer;
+}
+
+.categories > * {
+  margin-bottom: 25px;
+}
+
+.categories > * > :not(:last-child) {
+  margin-bottom: 15px;
 }
 
 @media screen and (max-width: 425px) {
@@ -407,6 +415,11 @@ a:hover {
     grid-area: header;
   }
 
+  .header > .nav > ul {
+    gap: 10px;
+    display: flex;
+  }
+
   .header > .logo {
     margin-left: 50px;
   }
@@ -537,15 +550,6 @@ a:hover {
 
   .reverse > .content > h2 {
     text-align: end;
-  }
-
-  .categories {
-    flex-direction: column;
-    display: flex;
-  }
-
-  .categories > * {
-    width: 50%;
   }
 }
 
