@@ -538,6 +538,15 @@ a:hover {
   .reverse > .content > h2 {
     text-align: end;
   }
+
+  .categories {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .categories > * {
+    width: 50%;
+  }
 }
 
 .hided > * {
