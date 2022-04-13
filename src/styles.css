@@ -344,6 +344,14 @@ a:hover {
     .reverse>.content>h2 {
         text-align: end;
     }
+
+    .bar{
+        background-color: #c2c5cb;
+    }
+
+    .bar-button{
+        background-color: #6f859b;
+    }
 }
 
 @media screen and (min-width: 769px) {

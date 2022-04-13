@@ -16,10 +16,7 @@ window.onresize = function() {
 };
 function checkSidebarExistence() {
     if (screen.width > 768) {
-        if (screen.width > 1025) {
-            if (container.nextElementSibling.classList.contains("sidebar")) body.removeChild(container.nextElementSibling);
-        } else if (container.nextElementSibling.className != "sidebar") container.parentNode.insertBefore(aside, container.nextSibling);
-    //resumen.getElementsByTagName("img")[0].src = './img/images.jpg';
+        if (container.nextElementSibling.className != "sidebar") container.parentNode.insertBefore(aside, container.nextSibling);
     } else if (container.nextElementSibling.classList.contains("sidebar")) body.removeChild(container.nextElementSibling);
 }
 
