@@ -187,6 +187,34 @@ a:hover {
     margin-bottom: auto;
 }
 
+.enlaces-biblio>ul{
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: fit-content;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+
+.enlaces-biblio>ul>*{
+    margin-bottom: 15px;
+}
+
+.enlaces-biblio>ul>li>a{
+    padding: 5px 10px;
+}
+
+.enlaces-biblio>ul>li>a:hover{
+    border-radius: 15px !important;
+    border: 1px solid #0B5AA2 !important;
+    color: black !important;
+}
+
 @media screen and (max-width: 425px) {
     body {
         max-width: 100%;
