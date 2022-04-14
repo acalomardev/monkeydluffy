@@ -19,7 +19,7 @@
 93C:\Users\adria\OneDrive\Escritorio\Herramientas HTML y CSS\PEC1\monkeydluffy-1\src\links.html132943135524986626 0
 104C:\Users\adria\OneDrive\Escritorio\Herramientas HTML y CSS\PEC1\monkeydluffy-1\dist\category.c4fe499a.js132943151428287260 0
 155C:\Users\adria\OneDrive\Escritorio\Herramientas HTML y CSS\PEC1\monkeydluffy-1\src\img\50f09c9389dd995eb599e914ea1f30d0--one-piece-manga-timeline-cover.jpg132943135524361448 0
-105C:\Users\adria\OneDrive\Escritorio\Herramientas HTML y CSS\PEC1\monkeydluffy-1\src\presentacion_script.js132943159776787009 0
+105C:\Users\adria\OneDrive\Escritorio\Herramientas HTML y CSS\PEC1\monkeydluffy-1\src\presentacion_script.js132944187680579252 0
 100C:\Users\adria\OneDrive\Escritorio\Herramientas HTML y CSS\PEC1\monkeydluffy-1\src\presentation.html132943135524986626 0
 95C:\Users\adria\OneDrive\Escritorio\Herramientas HTML y CSS\PEC1\monkeydluffy-1\src\img\SABO.jpg132943135524673875 0
 99C:\Users\adria\OneDrive\Escritorio\Herramientas HTML y CSS\PEC1\monkeydluffy-1\src\img\worstgen.jpg132943135524830097 0

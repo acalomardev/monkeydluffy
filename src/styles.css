@@ -10,21 +10,22 @@ p {
 }
 
 a {
-    text-decoration: none;
-    color: black;
+    text-decoration: none !important;
+    color: black !important;
 }
 
 ul {
     list-style: none;
+    margin-bottom: 0 !important;
 }
 
 a:hover {
-    color: blueviolet;
+    color: blueviolet !important;
 }
 
 p>a {
-    color: blue;
-    text-decoration: underline;
+    color: blue !important;
+    text-decoration: underline !important;
 }
 
 body {
@@ -124,6 +125,66 @@ a:hover {
 
 .categories>*>:not(:last-child) {
     margin-bottom: 15px;
+}
+
+.bar{
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.bar-button{
+    
+    background-color: #c2c5cb;
+    padding: 10px 10px;
+    border: 0;
+}
+
+.bar-button:hover{
+    background-color: #b5b8be;
+    transform: scale(1.05) perspective(1px)
+}
+
+.bar-button-selected{
+    background-color: #eaebed;
+}
+
+#presentacion-luffy-l{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.resumen-luffy{
+    margin-bottom: 15px;
+}
+.habilidades-luffy{
+    margin-bottom: 15px;
+}
+.habilidades-luffy>div>h3>a{
+    text-decoration: none;
+    color: black !important;
+}
+.habilidades-luffy>*>h3+p{
+    margin-bottom: 10px;;
+}
+.pasado-luffy{
+    margin-bottom: 15px;
+}
+
+.carousel-item>img{
+    height: 300px;
+    object-fit: contain;
+}
+
+#luffycarousel{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-width: 100%;
+}
+
+.footer>p{
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 @media screen and (max-width: 425px) {
@@ -270,7 +331,7 @@ a:hover {
     .resumen>.resumen-contenido {
         max-width: 50%;
     }
-    .category {}
+    
     .sidebar {
         grid-area: sidebar;
     }
@@ -343,14 +404,6 @@ a:hover {
     }
     .reverse>.content>h2 {
         text-align: end;
-    }
-
-    .bar{
-        background-color: #c2c5cb;
-    }
-
-    .bar-button{
-        background-color: #6f859b;
     }
 }
 
