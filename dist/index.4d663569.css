@@ -314,6 +314,10 @@ a:hover {
     justify-self: center;
   }
 
+  .enlaces-height > h1 {
+    text-align: center;
+  }
+
   .enlaces-biblio > ul > li {
     width: fit-content;
     margin-left: auto;
@@ -321,8 +325,20 @@ a:hover {
   }
 
   .enlaces-biblio > ul {
+    columns: 2;
     margin-top: 15px !important;
     margin-bottom: 15px !important;
+  }
+
+  .enlaces-biblio > ul > li {
+    margin-bottom: 20px;
+  }
+
+  .enlaces-biblio > ul > li > a {
+    padding: 5px 10px;
+    color: #000 !important;
+    border: 1px solid #0b5aa2 !important;
+    border-radius: 15px !important;
   }
 }
 
