@@ -1,669 +1,606 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 * {
-    padding: 0;
-    margin: 0;
-    font-family: 'Open Sans', sans-serif !important;
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif !important;
 }
-
-h1, h2, h3{
-    font-weight: 500 !important;
-    line-height: 1.2 !important;
+h1,
+h2,
+h3 {
+  font-weight: 500 !important;
+  line-height: 1.2 !important;
 }
-
 p {
-    text-align: justify;
+  text-align: justify;
 }
-
 a {
-    text-decoration: none !important;
-    color: black !important;
+  text-decoration: none !important;
+  color: black !important;
 }
-
 ul {
-    list-style: none;
-    margin-bottom: 0 !important;
+  list-style: none;
+  margin-bottom: 0 !important;
 }
-
 a:hover {
-    color: blueviolet !important;
+  color: blueviolet !important;
 }
-
-p>a {
-    color: blue !important;
-    text-decoration: underline !important;
+p > a {
+  color: blue !important;
+  text-decoration: underline !important;
 }
-
 body {
-    max-width: 100%;
+  max-width: 100%;
 }
-
-body>* {
+body > * {
+  margin: 0 15px;
+  max-width: 100%;
+}
+.header {
+  grid-area: header;
+  display: flex;
+  margin: 0px 0px 10px 0px;
+  padding: 5px;
+  align-items: center;
+  gap: 5px;
+  background-color: #6f859b;
+}
+.logo > a {
+  display: flex;
+}
+.logo a img {
+  width: 20vw;
+  min-width: 150px;
+}
+picture {
+  max-width: 100%;
+}
+picture > img {
+  width: 100%;
+}
+.card {
+  box-shadow: 0 10px 14px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.categories-title {
+  margin-bottom: 10px;
+}
+.card > .content > .hided {
+  display: none;
+}
+.card > .content > .showed {
+  display: block;
+}
+.card > .content > *:not(:first-child) {
+  margin-bottom: 15px;
+}
+.footer {
+  min-height: 75px;
+}
+.categorias {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+.lists a {
+  text-decoration: underline !important;
+}
+.content {
+  width: 100%;
+}
+.hided > li {
+  text-indent: 1em;
+}
+.hided > li > p {
+  text-indent: 2em;
+}
+.hided > a {
+  color: #00f;
+  text-decoration: underline;
+}
+a:hover {
+  cursor: pointer;
+}
+.categories > * {
+  margin-bottom: 25px;
+}
+.categories > * > :not(:last-child) {
+  margin-bottom: 15px;
+}
+.bar {
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+}
+.bar-button {
+  background-color: #c2c5cb;
+  padding: 10px 10px;
+  border: 0;
+}
+.bar-button:hover {
+  background-color: #b5b8be;
+  transform: scale(1.05) perspective(1px);
+}
+.bar-button-selected {
+  background-color: #eaebed;
+}
+#presentacion-luffy-l {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.resumen-luffy {
+  margin-bottom: 15px;
+}
+.habilidades-luffy {
+  margin-bottom: 15px;
+}
+.habilidades-luffy > div > h3 > a {
+  text-decoration: none;
+  color: black !important;
+}
+.habilidades-luffy > * > h3 + p {
+  margin-bottom: 10px;
+}
+.pasado-luffy {
+  margin-bottom: 15px;
+}
+.carousel-item > img {
+  height: 300px;
+  object-fit: contain;
+}
+#luffycarousel {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  max-width: 100%;
+}
+.footer > p {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+@media screen and (max-width: 425px) {
+  body {
+    max-width: 100%;
+  }
+  body > * {
     margin: 0 15px;
     max-width: 100%;
-}
-
-.header {
-    grid-area: header;
-    display: flex;
-    margin: 0px 0px 10px 0px;
-    padding: 5px;
-    align-items: center;
-    gap: 5px;
-    background-color: #6f859b;
-}
-
-.logo>a {
-    display: flex;
-}
-
-.logo a img {
-    width: 20vw;
-    min-width: 150px;
-}
-
-picture {
-    max-width: 100%;
-}
-
-picture>img {
-    width: 100%;
-}
-
-.card {
-    box-shadow: 0 10px 14px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-}
-
-.categories-title {
-    margin-bottom: 10px;
-}
-
-.card>.content>.hided {
-    display: none;
-}
-
-.card>.content>.showed {
-    display: block;
-}
-
-.card>.content>*:not(:first-child) {
-    margin-bottom: 15px;
-}
-
-.footer {
-    min-height: 75px;
-}
-
-.categorias {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin-bottom: 10px;
-}
-
-.lists a {
-    text-decoration: underline !important;
-}
-
-.content {
-    width: 100%;
-}
-
-.hided>li {
-    text-indent: 1em;
-}
-
-.hided>li>p {
-    text-indent: 2em;
-}
-
-.hided>a {
-    color: #00f;
+  }
+  .body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "header" "container" "footer";
+  }
+  .header {
+    justify-content: space-around;
+  }
+  .header h1 {
+    font-size: 16px;
+  }
+  .header > .nav > ul > li > a {
     text-decoration: underline;
-}
-
-a:hover {
-    cursor: pointer;
-}
-
-.categories>* {
-    margin-bottom: 25px;
-}
-
-.categories>*>:not(:last-child) {
-    margin-bottom: 15px;
-}
-
-.bar{
+  }
+  .container {
+    grid-area: container;
+    display: grid;
+    grid-template-areas: "resumen" "category";
+    gap: 10px;
+  }
+  .resumen {
+    grid-area: resumen;
+    max-width: inherit;
+  }
+  .resumen > picture > img,
+  .resumen > picture {
+    max-width: inherit;
+  }
+  .category {
+    grid-area: category;
+  }
+  .category > ul > * {
+    margin-bottom: 5px;
+  }
+  .documentacion {
+    grid-area: documentacion;
+  }
+  .sidebar {
+    display: none;
+  }
+  .footer {
+    grid-area: footer;
+    background-color: #6f859b;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  .footer > * {
+    margin: 10px 5px;
+    text-align: center;
+  }
+  .categories {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .categorias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .lists {
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "familiares habilidades" "teammates teammates";
+  }
+  .lists > * {
+    margin: 10px;
+  }
+  .lists > .familiares {
+    grid-area: familiares;
+  }
+  .lists > .habilidades {
+    grid-area: habilidades;
+    justify-self: end;
+    text-align: right;
+  }
+  .lists > .teammates {
+    grid-area: teammates;
+    justify-self: center;
+  }
+  .enlaces-height > h1 {
+    text-align: center;
+  }
+  .enlaces-biblio > ul > li {
     width: fit-content;
     margin-right: auto;
     margin-left: auto;
-}
-
-.bar-button{
-    
-    background-color: #c2c5cb;
-    padding: 10px 10px;
-    border: 0;
-}
-
-.bar-button:hover{
-    background-color: #b5b8be;
-    transform: scale(1.05) perspective(1px)
-}
-
-.bar-button-selected{
-    background-color: #eaebed;
-}
-
-#presentacion-luffy-l{
-    margin-bottom: 15px;
-    margin-top: 15px;
-}
-
-.resumen-luffy{
-    margin-bottom: 15px;
-}
-.habilidades-luffy{
-    margin-bottom: 15px;
-}
-.habilidades-luffy>div>h3>a{
-    text-decoration: none;
+  }
+  .enlaces-biblio > ul {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+    columns: 2;
+  }
+  .enlaces-biblio > ul > li {
+    margin-bottom: 20px;
+  }
+  .enlaces-biblio > ul > li > a {
+    border-radius: 15px !important;
+    border: 1px solid #0B5AA2 !important;
     color: black !important;
+    padding: 5px 10px;
+  }
 }
-.habilidades-luffy>*>h3+p{
-    margin-bottom: 10px;;
-}
-.pasado-luffy{
-    margin-bottom: 15px;
-}
-
-.carousel-item>img{
-    height: 300px;
-    object-fit: contain;
-}
-
-#luffycarousel{
+@media screen and (min-width: 426px) {
+  .header h1 {
+    font-size: 2em;
+  }
+  .enlaces-biblio {
+    margin-top: 5%;
+    margin-bottom: 5% !important;
+  }
+  .enlaces-biblio > ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
     margin-top: 15px;
+    width: fit-content;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 15px;
-    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+  }
+  .enlaces-biblio > ul > * {
+    margin-bottom: 15px;
+  }
+  .enlaces-biblio > ul > li > a {
+    padding: 5px 10px;
+  }
+  .enlaces-biblio > ul > li > a:hover {
+    border-radius: 15px !important;
+    border: 1px solid #0B5AA2 !important;
+    color: black !important;
+  }
 }
-
-.footer>p{
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-@media screen and (max-width: 425px) {
-    body {
-        max-width: 100%;
-    }
-    body>* {
-        margin: 0 15px;
-        max-width: 100%;
-    }
-    .body {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, auto);
-        grid-template-areas: "header" "container" "footer";
-    }
-    .header {
-        justify-content: space-around;
-    }
-    .header h1 {
-        font-size: 16px;
-    }
-    .header>.nav>ul>li>a {
-        text-decoration: underline;
-    }
-    .container {
-        grid-area: container;
-        display: grid;
-        grid-template-areas: "resumen" "category";
-        gap: 10px;
-    }
-    .resumen {
-        grid-area: resumen;
-        max-width: inherit;
-    }
-    .resumen>picture>img,
-    .resumen>picture {
-        max-width: inherit;
-    }
-    .category {
-        grid-area: category;
-    }
-    .category>ul>* {
-        margin-bottom: 5px;
-    }
-    .documentacion {
-        grid-area: documentacion;
-    }
-    .sidebar {
-        display: none;
-    }
-    .footer {
-        grid-area: footer;
-        background-color: #6f859b;
-        margin: 0;
-        display: flex;
-        align-items: center;
-    }
-    .footer>* {
-        margin: 10px 5px;
-        text-align: center;
-    }
-    .categories {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-    .card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-    .categorias {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-    .lists {
-        display: grid;
-        gap: 10px;
-        grid-template-areas: "familiares habilidades" "teammates teammates";
-    }
-    .lists>* {
-        margin: 10px;
-    }
-    .lists>.familiares {
-        grid-area: familiares;
-    }
-    .lists>.habilidades {
-        grid-area: habilidades;
-        justify-self: end;
-        text-align: right;
-    }
-    .lists>.teammates {
-        grid-area: teammates;
-        justify-self: center;
-    }
-
-    .enlaces-height>h1{
-        text-align: center;
-    }
-
-    .enlaces-biblio>ul>li{
-        width: fit-content;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .enlaces-biblio>ul{
-        margin-top: 15px !important;
-        margin-bottom: 15px !important;
-        columns: 2;
-    }
-    .enlaces-biblio>ul>li{
-        margin-bottom: 20px;
-
-    }
-    .enlaces-biblio>ul>li>a{
-        border-radius: 15px !important;
-        border: 1px solid #0B5AA2 !important;
-        color: black !important;
-        padding: 5px 10px;        
-    }
-}
-
-@media screen and (min-width: 426px){
-    .header h1{
-        font-size: 2em;
-    }
-    .enlaces-biblio{
-        margin-top: 5%;
-        margin-bottom: 5% !important;
-    }
-    .enlaces-biblio>ul{
-        columns: 2;
-        -webkit-columns: 2;
-        -moz-columns: 2;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        width: fit-content;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        margin-bottom: 15px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 15px;
-    }
-    
-    .enlaces-biblio>ul>*{
-        margin-bottom: 15px;
-    }
-    
-    .enlaces-biblio>ul>li>a{
-        padding: 5px 10px;
-    }
-    
-    .enlaces-biblio>ul>li>a:hover{
-        border-radius: 15px !important;
-        border: 1px solid #0B5AA2 !important;
-        color: black !important;
-    }
-}
-
 @media screen and (min-width: 426px) and (max-width: 768px) {
-    .body {
-        display: grid;
-        grid-template-rows: repeat(5, auto);
-        grid-template-columns: repeat(2, auto);
-        grid-template-areas: " header header " "container container" "container container" "container container" "footer footer";
-    }
-    .header {
-        grid-area: header;
-    }
-    .header> :first-child {
-        margin-left: 10px;
-    }
-    .header>h1 {
-        margin-left: auto;
-        font-size: 20px;
-    }
-    .header> :last-child {
-        margin-right: 10px;
-        margin-left: auto;
-    }
-    .header>.nav>ul {
-        display: flex;
-        gap: 10px;
-    }
-    .container {
-        grid-area: container;
-        grid-template-areas: "resumen" "category";
-        margin-bottom: 10px;
-    }
-    .resumen {
-        grid-area: resumen;
-        display: flex;
-        gap: 10px;
-        align-items: center;
-    }
-    .resumen>picture {
-        height: 50%;
-    }
-    .resumen>picture>img {
-        max-width: 100%;
-    }
-    .resumen>.resumen-contenido {
-        max-width: 50%;
-    }
-    
-    .sidebar {
-        grid-area: sidebar;
-    }
-    .footer {
-        grid-area: footer;
-        background-color: #6f859b;
-        margin: 0;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-    .footer>p {
-        margin: auto;
-    }
-    .card {
-        display: flex;
-        margin-bottom: 15px;
-        gap: 10px;
-    }
-    .card>img {
-        aspect-ratio: 1/1;
-        width: 200px;
-        height: 200px;
-    }
-    .reverse {
-        flex-direction: row-reverse;
-    }
-    .straight>.content {
-        margin-right: 10px;
-    }
-    .reverse>.content {
-        margin-left: 10px;
-    }
-    .categorias {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-right: 10px;
-        padding-left: 10px;
-    }
-    .categorias-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-    }
-    .mugiwaracrew {
-        width: 50%;
-    }
-    .lists {
-        display: grid;
-        grid-template-areas: "familiares habilidades" "teammates teammates";
-        width: 50%;
-    }
-    .familiares {
-        grid-area: familiares;
-    }
-    .habilidades {
-        grid-area: habilidades;
-        justify-self: end;
-        text-align: right;
-    }
-    .teammates {
-        grid-area: teammates;
-        justify-self: center;
-    }
-    .reverse>.content>h2 {
-        text-align: end;
-    }
+  .body {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas: " header header " "container container" "container container" "container container" "footer footer";
+  }
+  .header {
+    grid-area: header;
+  }
+  .header > :first-child {
+    margin-left: 10px;
+  }
+  .header > h1 {
+    margin-left: auto;
+    font-size: 20px;
+  }
+  .header > :last-child {
+    margin-right: 10px;
+    margin-left: auto;
+  }
+  .header > .nav > ul {
+    display: flex;
+    gap: 10px;
+  }
+  .container {
+    grid-area: container;
+    grid-template-areas: "resumen" "category";
+    margin-bottom: 10px;
+  }
+  .resumen {
+    grid-area: resumen;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .resumen > picture {
+    height: 50%;
+  }
+  .resumen > picture > img {
+    max-width: 100%;
+  }
+  .resumen > .resumen-contenido {
+    max-width: 50%;
+  }
+  .sidebar {
+    grid-area: sidebar;
+  }
+  .footer {
+    grid-area: footer;
+    background-color: #6f859b;
+    margin: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .footer > p {
+    margin: auto;
+  }
+  .card {
+    display: flex;
+    margin-bottom: 15px;
+    gap: 10px;
+  }
+  .card > img {
+    aspect-ratio: 1/1;
+    width: 200px;
+    height: 200px;
+  }
+  .reverse {
+    flex-direction: row-reverse;
+  }
+  .straight > .content {
+    margin-right: 10px;
+  }
+  .reverse > .content {
+    margin-left: 10px;
+  }
+  .categorias {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .categorias-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .mugiwaracrew {
+    width: 50%;
+  }
+  .lists {
+    display: grid;
+    grid-template-areas: "familiares habilidades" "teammates teammates";
+    width: 50%;
+  }
+  .familiares {
+    grid-area: familiares;
+  }
+  .habilidades {
+    grid-area: habilidades;
+    justify-self: end;
+    text-align: right;
+  }
+  .teammates {
+    grid-area: teammates;
+    justify-self: center;
+  }
+  .reverse > .content > h2 {
+    text-align: end;
+  }
 }
-
 @media screen and (min-width: 769px) {
-    .body {
-        display: grid;
-        grid-template-columns: 50px repeat(3, auto) 50px;
-        grid-template-rows: repeat(5, auto);
-        grid-template-areas: "header header header header header" ". container container sidebar ." ". container container sidebar ." ". container container sidebar ." "footer footer footer footer footer";
-    }
-    .header {
-        grid-area: header;
-    }
-    .header>.nav>ul {
-        display: flex;
-        gap: 10px;
-    }
-    .header>.logo {
-        margin-left: 50px;
-    }
-    .header>h1 {
-        margin: auto;
-    }
-    .header>.nav {
-        margin-right: 50px;
-        margin-left: auto;
-    }
-    .container {
-        grid-area: container;
-    }
-    .container>* {
-        margin-bottom: 10px;
-    }
-    .category>*:not(:last-child) {
-        margin-bottom: 10px;
-    }
-    .category>*:first-child {
-        margin-bottom: 0 !important;
-    }
-    .sidebar {
-        grid-area: sidebar;
-        background-color: #c2c5cb;
-        width: 100px;
-        height: 200px;
-        position: sticky;
-        top: 50px;
-    }
-    nav {
-        position: relative;
-        margin: 0 15%;
-        text-align: right;
-        top: 50%;
-        transform: translateY(-50%);
-        font-weight: bold;
-    }
-    nav>ul>* {
-        margin-bottom: 10px;
-    }
-    .footer {
-        grid-area: footer;
-        height: 75px;
-        background-color: #6f859b;
-        margin: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .card {
-        display: flex;
-        margin-bottom: 15px;
-        gap: 10px;
-        justify-content: space-between;
-    }
-    .card>img {
-        aspect-ratio: 1/1;
-        width: 200px;
-        height: 200px;
-    }
-    .reverse {
-        flex-direction: row-reverse;
-    }
-    .straight>.content {
-        margin-right: 10px;
-    }
-    .reverse>.content {
-        margin-left: 10px;
-    }
-    .categorias-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-    }
-    .categorias {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 20px 10px;
-    }
-    .categorias>* {
-        width: 50%;
-    }
-    .mugiwaracrew>picture>img {
-        max-width: 100%;
-    }
-    .lists {
-        display: grid;
-        grid-template-areas: "familiares habilidades" "teammates teammates";
-    }
-    .familiares {
-        grid-area: familiares;
-    }
-    .habilidades {
-        grid-area: habilidades;
-        text-align: end;
-        justify-self: right;
-    }
-    .teammates {
-        grid-area: teammates;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .reverse>.content>h2 {
-        text-align: end;
-    }
-
-    .enlaces-height{
-        height: 100%;
-    }
-
-    .enlaces-height>.footer{
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-    }
-
-    .enlaces-height>.enlaces-biblio>ul{
-        margin-top: auto;
-        margin-bottom: auto !important;
-    }
+  .body {
+    display: grid;
+    grid-template-columns: 50px repeat(3, auto) 50px;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "header header header header header" ". container container sidebar ." ". container container sidebar ." ". container container sidebar ." "footer footer footer footer footer";
+  }
+  .header {
+    grid-area: header;
+  }
+  .header > .nav > ul {
+    display: flex;
+    gap: 10px;
+  }
+  .header > .logo {
+    margin-left: 50px;
+  }
+  .header > h1 {
+    margin: auto;
+  }
+  .header > .nav {
+    margin-right: 50px;
+    margin-left: auto;
+  }
+  .container {
+    grid-area: container;
+  }
+  .container > * {
+    margin-bottom: 10px;
+  }
+  .category > *:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .category > *:first-child {
+    margin-bottom: 0 !important;
+  }
+  .sidebar {
+    grid-area: sidebar;
+    background-color: #c2c5cb;
+    width: 100px;
+    height: 200px;
+    position: sticky;
+    top: 50px;
+  }
+  nav {
+    position: relative;
+    margin: 0 15%;
+    text-align: right;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+  }
+  nav > ul > * {
+    margin-bottom: 10px;
+  }
+  .footer {
+    grid-area: footer;
+    height: 75px;
+    background-color: #6f859b;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    display: flex;
+    margin-bottom: 15px;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  .card > img {
+    aspect-ratio: 1/1;
+    width: 200px;
+    height: 200px;
+  }
+  .reverse {
+    flex-direction: row-reverse;
+  }
+  .straight > .content {
+    margin-right: 10px;
+  }
+  .reverse > .content {
+    margin-left: 10px;
+  }
+  .categorias-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .categorias {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 10px;
+  }
+  .categorias > * {
+    width: 50%;
+  }
+  .mugiwaracrew > picture > img {
+    max-width: 100%;
+  }
+  .lists {
+    display: grid;
+    grid-template-areas: "familiares habilidades" "teammates teammates";
+  }
+  .familiares {
+    grid-area: familiares;
+  }
+  .habilidades {
+    grid-area: habilidades;
+    text-align: end;
+    justify-self: right;
+  }
+  .teammates {
+    grid-area: teammates;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .reverse > .content > h2 {
+    text-align: end;
+  }
+  .enlaces-height {
+    height: 100%;
+  }
+  .enlaces-height > .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  .enlaces-height > .enlaces-biblio > ul {
+    margin-top: auto;
+    margin-bottom: auto !important;
+  }
 }
-
-.hided>* {
-    display: inherit;
+.hided > * {
+  display: inherit;
 }
-
-@media screen and (min-width:1025px) {
-    body,
-    html {
-        height: 100%;
-    }
-    .header {
-        height: fit-content;
-    }
-    .header>.logo>a>img {
-        width: 200px;
-    }
-    picture>img {
-        width: 35vw;
-    }
-    .resumen {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-    .category {
-        display: grid;
-        grid-template-areas: "title title" "seccion picture";
-        align-items: center;
-    }
-    .category>h2 {
-        grid-area: title;
-    }
-    .category>ul {
-        grid-area: seccion;
-        margin-right: 10px;
-    }
-    .category>picture {
-        grid-area: picture;
-    }
-    .index-footer {
-        height: 100%;
-    }
+@media screen and (min-width: 1025px) {
+  body,
+  html {
+    height: 100%;
+  }
+  .header {
+    height: fit-content;
+  }
+  .header > .logo > a > img {
+    width: 200px;
+  }
+  picture > img {
+    width: 35vw;
+  }
+  .resumen {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .category {
+    display: grid;
+    grid-template-areas: "title title" "seccion picture";
+    align-items: center;
+  }
+  .category > h2 {
+    grid-area: title;
+  }
+  .category > ul {
+    grid-area: seccion;
+    margin-right: 10px;
+  }
+  .category > picture {
+    grid-area: picture;
+  }
+  .index-footer {
+    height: 100%;
+  }
 }
-
-
-/*
-.body{
-        display: grid;
-        grid-template-columns: 1fr auto auto 1fr;
-        grid-template-rows: repeat(5, auto);
-        grid-template-areas: ". header header ." ". resumen sidebar ." ". category sidebar ." ". documentacion sidebar ." ". footer footer .";
-    }
-*/
