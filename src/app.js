@@ -10,7 +10,7 @@ window.onload = function() {
     checkSidebarExistence();
 }
 window.onpageshow = function() {
-    checkSidebarExistence();
+    //checkSidebarExistence();
 }
 window.onresize = function() {
     checkSidebarExistence();
@@ -18,15 +18,21 @@ window.onresize = function() {
 
 function checkSidebarExistence() {
     if (screen.width > 768) {
-                if (container.nextElementSibling.className != "sidebar") {
-                    container.parentNode.insertBefore(aside, container.nextSibling);
-                }
+        if (!document.getElementsByClassName("sidebar")[0]){
+            container.parentElement.insertBefore(aside, container.nextElementSibling);
+        }
+                // if (container.nextElementSibling.className != "sidebar") {
+                //     container.parentNode.insertBefore(aside, container.nextSibling);
+                // }
             
         //resumen.getElementsByTagName("img")[0].src = './img/images.jpg';
     } else {
-        if (container.nextElementSibling.classList.contains("sidebar")) {
-
-            body.removeChild(container.nextElementSibling);
+        if (document.getElementsByClassName("sidebar")[0]){
+            container.parentElement.removeChild(document.getElementsByClassName("sidebar")[0]);
         }
+        // if (container.nextElementSibling.classList.contains("sidebar")) {
+
+        //     body.removeChild(container.nextElementSibling);
+        // }
     }
 }

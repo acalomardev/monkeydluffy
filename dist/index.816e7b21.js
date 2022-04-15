@@ -9,15 +9,15 @@ window.onload = function() {
     checkSidebarExistence();
 };
 window.onpageshow = function() {
-    checkSidebarExistence();
+//checkSidebarExistence();
 };
 window.onresize = function() {
     checkSidebarExistence();
 };
 function checkSidebarExistence() {
     if (screen.width > 768) {
-        if (container.nextElementSibling.className != "sidebar") container.parentNode.insertBefore(aside, container.nextSibling);
-    } else if (container.nextElementSibling.classList.contains("sidebar")) body.removeChild(container.nextElementSibling);
+        if (!document.getElementsByClassName("sidebar")[0]) container.parentElement.insertBefore(aside, container.nextElementSibling);
+    } else if (document.getElementsByClassName("sidebar")[0]) container.parentElement.removeChild(document.getElementsByClassName("sidebar")[0]);
 }
 
 //# sourceMappingURL=index.816e7b21.js.map
