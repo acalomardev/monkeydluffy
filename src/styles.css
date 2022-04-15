@@ -2,7 +2,12 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+h1, h2, h3{
+    font-weight: 500 !important;
+    line-height: 1.2 !important;
 }
 
 p {
@@ -187,34 +192,6 @@ a:hover {
     margin-bottom: auto;
 }
 
-.enlaces-biblio>ul{
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    width: fit-content;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin-bottom: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 15px;
-}
-
-.enlaces-biblio>ul>*{
-    margin-bottom: 15px;
-}
-
-.enlaces-biblio>ul>li>a{
-    padding: 5px 10px;
-}
-
-.enlaces-biblio>ul>li>a:hover{
-    border-radius: 15px !important;
-    border: 1px solid #0B5AA2 !important;
-    color: black !important;
-}
-
 @media screen and (max-width: 425px) {
     body {
         max-width: 100%;
@@ -311,6 +288,53 @@ a:hover {
     .lists>.teammates {
         grid-area: teammates;
         justify-self: center;
+    }
+
+    .enlaces-biblio>ul>li{
+        width: fit-content;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .enlaces-biblio>ul{
+        margin-top: 15px !important;
+        margin-bottom: 15px !important;
+    }
+}
+
+@media screen and (min-width: 426px){
+    .header h1{
+        font-size: 2em;
+    }
+    .enlaces-biblio{
+        margin-top: 5%;
+        margin-bottom: 5% !important;
+    }
+    .enlaces-biblio>ul{
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: fit-content;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px;
+    }
+    
+    .enlaces-biblio>ul>*{
+        margin-bottom: 15px;
+    }
+    
+    .enlaces-biblio>ul>li>a{
+        padding: 5px 10px;
+    }
+    
+    .enlaces-biblio>ul>li>a:hover{
+        border-radius: 15px !important;
+        border: 1px solid #0B5AA2 !important;
+        color: black !important;
     }
 }
 
@@ -558,6 +582,21 @@ a:hover {
     }
     .reverse>.content>h2 {
         text-align: end;
+    }
+
+    .enlaces-height{
+        height: 100%;
+    }
+
+    .enlaces-height>.footer{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .enlaces-height>.enlaces-biblio>ul{
+        margin-top: auto;
+        margin-bottom: auto !important;
     }
 }
 
