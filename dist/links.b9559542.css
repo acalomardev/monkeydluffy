@@ -1,0 +1,735 @@
+@import "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Open Sans, sans-serif !important;
+}
+
+h1, h2, h3 {
+  font-weight: 500 !important;
+  line-height: 1.2 !important;
+}
+
+p {
+  text-align: justify;
+}
+
+a {
+  color: #000 !important;
+  text-decoration: none !important;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 0 !important;
+}
+
+a:hover {
+  color: #8a2be2 !important;
+}
+
+p > a {
+  color: #00f !important;
+  text-decoration: underline !important;
+}
+
+body {
+  max-width: 100%;
+}
+
+body > * {
+  max-width: 100%;
+  margin: 0 15px;
+}
+
+.header {
+  background-color: #6f859b;
+  grid-area: header;
+  align-items: center;
+  gap: 5px;
+  margin: 0 0 10px;
+  padding: 5px;
+  display: flex;
+}
+
+.logo > a {
+  display: flex;
+}
+
+.logo a img {
+  width: 20vw;
+  min-width: 150px;
+}
+
+picture {
+  max-width: 100%;
+}
+
+picture > img {
+  width: 100%;
+}
+
+.card {
+  transition: all .3s;
+  box-shadow: 0 10px 14px #0003;
+}
+
+.categories-title {
+  margin-bottom: 10px;
+}
+
+.card > .content > .hided {
+  display: none;
+}
+
+.card > .content > .showed {
+  display: block;
+}
+
+.card > .content > :not(:first-child) {
+  margin-bottom: 15px;
+}
+
+.footer {
+  min-height: 75px;
+}
+
+.categorias {
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px #0003;
+}
+
+.lists a {
+  text-decoration: underline !important;
+}
+
+.content {
+  width: 100%;
+}
+
+.hided > li {
+  text-indent: 1em;
+}
+
+.hided > li > p {
+  text-indent: 2em;
+}
+
+.hided > a {
+  color: #00f;
+  text-decoration: underline;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.categories > * {
+  margin-bottom: 25px;
+}
+
+.categories > * > :not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.bar {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bar-button {
+  background-color: #c2c5cb;
+  border: none;
+  padding: 10px;
+}
+
+.bar-button:hover {
+  background-color: #b5b8be;
+  transform: scale(1.05)perspective(1px);
+}
+
+.bar-button-selected {
+  background-color: #eaebed;
+}
+
+#presentacion-luffy-l {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.resumen-luffy, .habilidades-luffy {
+  margin-bottom: 15px;
+}
+
+.habilidades-luffy > div > h3 > a {
+  text-decoration: none;
+  color: #000 !important;
+}
+
+.habilidades-luffy > * > h3 + p {
+  margin-bottom: 10px;
+}
+
+.pasado-luffy {
+  margin-bottom: 15px;
+}
+
+.carousel-item > img {
+  height: 300px;
+  object-fit: contain;
+}
+
+#luffycarousel {
+  max-width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.footer > p {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    max-width: 100%;
+  }
+
+  body > * {
+    max-width: 100%;
+    margin: 0 15px;
+  }
+
+  .body {
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 1fr;
+    grid-template-areas: "header"
+                         "container"
+                         "footer";
+    display: grid;
+  }
+
+  .header {
+    justify-content: space-around;
+  }
+
+  .header h1 {
+    font-size: 16px;
+  }
+
+  .header > .nav > ul > li > a {
+    text-decoration: underline;
+  }
+
+  .container {
+    grid-area: container;
+    grid-template-areas: "resumen"
+                         "category";
+    gap: 10px;
+    display: grid;
+  }
+
+  .resumen {
+    max-width: inherit;
+    grid-area: resumen;
+  }
+
+  .resumen > picture > img, .resumen > picture {
+    max-width: inherit;
+  }
+
+  .category {
+    grid-area: category;
+  }
+
+  .category > ul > * {
+    margin-bottom: 5px;
+  }
+
+  .documentacion {
+    grid-area: documentacion;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .footer {
+    background-color: #6f859b;
+    grid-area: footer;
+    align-items: center;
+    margin: 0;
+    display: flex;
+  }
+
+  .footer > * {
+    text-align: center;
+    margin: 10px 5px;
+  }
+
+  .categories {
+    flex-direction: column;
+    gap: 15px;
+    display: flex;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    display: flex;
+  }
+
+  .categorias {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+  }
+
+  .lists {
+    grid-template-areas: "familiares habilidades"
+                         "teammates teammates";
+    gap: 10px;
+    display: grid;
+  }
+
+  .lists > * {
+    margin: 10px;
+  }
+
+  .lists > .familiares {
+    grid-area: familiares;
+  }
+
+  .lists > .habilidades {
+    text-align: right;
+    grid-area: habilidades;
+    justify-self: end;
+  }
+
+  .lists > .teammates {
+    grid-area: teammates;
+    justify-self: center;
+  }
+
+  .enlaces-biblio > ul > li {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .enlaces-biblio > ul {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+  }
+}
+
+@media screen and (min-width: 426px) {
+  .header h1 {
+    font-size: 2em;
+  }
+
+  .enlaces-biblio {
+    margin-top: 5%;
+    margin-bottom: 5% !important;
+  }
+
+  .enlaces-biblio > ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    width: fit-content;
+    margin: 15px auto;
+    padding: 15px;
+    box-shadow: 0 4px 8px #0003;
+  }
+
+  .enlaces-biblio > ul > * {
+    margin-bottom: 15px;
+  }
+
+  .enlaces-biblio > ul > li > a {
+    padding: 5px 10px;
+  }
+
+  .enlaces-biblio > ul > li > a:hover {
+    color: #000 !important;
+    border: 1px solid #0b5aa2 !important;
+    border-radius: 15px !important;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .body {
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas: "header header"
+                         "container container"
+                         "container container"
+                         "container container"
+                         "footer footer";
+    display: grid;
+  }
+
+  .header {
+    grid-area: header;
+  }
+
+  .header > :first-child {
+    margin-left: 10px;
+  }
+
+  .header > h1 {
+    margin-left: auto;
+    font-size: 20px;
+  }
+
+  .header > :last-child {
+    margin-left: auto;
+    margin-right: 10px;
+  }
+
+  .header > .nav > ul {
+    gap: 10px;
+    display: flex;
+  }
+
+  .container {
+    grid-area: container;
+    grid-template-areas: "resumen"
+                         "category";
+    margin-bottom: 10px;
+  }
+
+  .resumen {
+    grid-area: resumen;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+  }
+
+  .resumen > picture {
+    height: 50%;
+  }
+
+  .resumen > picture > img {
+    max-width: 100%;
+  }
+
+  .resumen > .resumen-contenido {
+    max-width: 50%;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+  }
+
+  .footer {
+    height: 50px;
+    background-color: #6f859b;
+    grid-area: footer;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    display: flex;
+  }
+
+  .footer > p {
+    margin: auto;
+  }
+
+  .card {
+    gap: 10px;
+    margin-bottom: 15px;
+    display: flex;
+  }
+
+  .card > img {
+    aspect-ratio: 1 / 1;
+    width: 200px;
+    height: 200px;
+  }
+
+  .reverse {
+    flex-direction: row-reverse;
+  }
+
+  .straight > .content {
+    margin-right: 10px;
+  }
+
+  .reverse > .content {
+    margin-left: 10px;
+  }
+
+  .categorias {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 10px;
+    display: flex;
+  }
+
+  .categorias-container {
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .mugiwaracrew {
+    width: 50%;
+  }
+
+  .lists {
+    width: 50%;
+    grid-template-areas: "familiares habilidades"
+                         "teammates teammates";
+    display: grid;
+  }
+
+  .familiares {
+    grid-area: familiares;
+  }
+
+  .habilidades {
+    text-align: right;
+    grid-area: habilidades;
+    justify-self: end;
+  }
+
+  .teammates {
+    grid-area: teammates;
+    justify-self: center;
+  }
+
+  .reverse > .content > h2 {
+    text-align: end;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .body {
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: 50px repeat(3, auto) 50px;
+    grid-template-areas: "header header header header header"
+                         ". container container sidebar ."
+                         ". container container sidebar ."
+                         ". container container sidebar ."
+                         "footer footer footer footer footer";
+    display: grid;
+  }
+
+  .header {
+    grid-area: header;
+  }
+
+  .header > .nav > ul {
+    gap: 10px;
+    display: flex;
+  }
+
+  .header > .logo {
+    margin-left: 50px;
+  }
+
+  .header > h1 {
+    margin: auto;
+  }
+
+  .header > .nav {
+    margin-left: auto;
+    margin-right: 50px;
+  }
+
+  .container {
+    grid-area: container;
+  }
+
+  .container > *, .category > :not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .category > :first-child {
+    margin-bottom: 0 !important;
+  }
+
+  .sidebar {
+    width: 100px;
+    height: 200px;
+    background-color: #c2c5cb;
+    grid-area: sidebar;
+    position: sticky;
+    top: 50px;
+  }
+
+  nav {
+    text-align: right;
+    margin: 0 15%;
+    font-weight: bold;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  nav > ul > * {
+    margin-bottom: 10px;
+  }
+
+  .footer {
+    height: 75px;
+    background-color: #6f859b;
+    grid-area: footer;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    display: flex;
+  }
+
+  .card {
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 15px;
+    display: flex;
+  }
+
+  .card > img {
+    aspect-ratio: 1 / 1;
+    width: 200px;
+    height: 200px;
+  }
+
+  .reverse {
+    flex-direction: row-reverse;
+  }
+
+  .straight > .content {
+    margin-right: 10px;
+  }
+
+  .reverse > .content {
+    margin-left: 10px;
+  }
+
+  .categorias-container {
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .categorias {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 10px;
+    display: flex;
+  }
+
+  .categorias > * {
+    width: 50%;
+  }
+
+  .mugiwaracrew > picture > img {
+    max-width: 100%;
+  }
+
+  .lists {
+    grid-template-areas: "familiares habilidades"
+                         "teammates teammates";
+    display: grid;
+  }
+
+  .familiares {
+    grid-area: familiares;
+  }
+
+  .habilidades {
+    text-align: end;
+    grid-area: habilidades;
+    justify-self: right;
+  }
+
+  .teammates {
+    flex-direction: column;
+    grid-area: teammates;
+    align-items: center;
+    display: flex;
+  }
+
+  .reverse > .content > h2 {
+    text-align: end;
+  }
+
+  .enlaces-height {
+    height: 100%;
+  }
+
+  .enlaces-height > .footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .enlaces-height > .enlaces-biblio > ul {
+    margin-top: auto;
+    margin-bottom: auto !important;
+  }
+}
+
+.hided > * {
+  display: inherit;
+}
+
+@media screen and (min-width: 1025px) {
+  body, html {
+    height: 100%;
+  }
+
+  .header {
+    height: fit-content;
+  }
+
+  .header > .logo > a > img {
+    width: 200px;
+  }
+
+  picture > img {
+    width: 35vw;
+  }
+
+  .resumen {
+    align-items: center;
+    gap: 10px;
+    display: flex;
+  }
+
+  .category {
+    grid-template-areas: "title title"
+                         "seccion picture";
+    align-items: center;
+    display: grid;
+  }
+
+  .category > h2 {
+    grid-area: title;
+  }
+
+  .category > ul {
+    grid-area: seccion;
+    margin-right: 10px;
+  }
+
+  .category > picture {
+    grid-area: picture;
+  }
+
+  .index-footer {
+    height: 100%;
+  }
+}
+
+/*# sourceMappingURL=links.b9559542.css.map */
